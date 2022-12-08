@@ -1,0 +1,28 @@
+.dropdown__lang {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown__lang .dropdown__lang-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdown__lang .dropdown__lang-items {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+    width: 135px;
+}
+
+.dropdown__lang .dropdown__lang-items .dropdown__lang-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

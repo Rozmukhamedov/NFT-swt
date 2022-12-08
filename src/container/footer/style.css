@@ -1,0 +1,15 @@
+.footer {
+    background: #F2F3F7;
+}
+
+.footer .footer__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer .footer__flex svg{
+    width: 25px;
+    height: 26px;
+    margin: 0 2px;
+}

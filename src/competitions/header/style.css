@@ -1,0 +1,22 @@
+.header {
+    background: #F2F3F7;
+    padding: 12px 0;
+    border-bottom: 1px solid #D3D5DC;
+}
+
+.header .header__flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header__flex .header__logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.header .header__flex .header__end {
+    display: flex;
+}

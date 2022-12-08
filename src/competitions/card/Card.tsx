@@ -1,7 +1,7 @@
-import "./style.css"
 import React from 'react'
+import "./style.css"
 
-function Footer() {
+function Card() {
   return (
     <div>
       
@@ -9,4 +9,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default Card
