@@ -2,7 +2,7 @@ import "./style.css";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container } from "@mantine/core";
-import Logo from "../../assets/images/logo.svg";
+import Logo from "assets/images/logo.svg";
 import SearchInput from "../search/SearchInput";
 import DropdownProfile from "./dropdown-profile/DropdownProfile";
 import DropdownLanguage from "./dropdown-language/DropdownLanguage";
@@ -20,7 +20,7 @@ function Header() {
           <SearchInput />
           <div className="header__end">
             <DropdownProfile />
-            <DropdownLanguage/>
+            <DropdownLanguage />
           </div>
         </div>
       </Container>

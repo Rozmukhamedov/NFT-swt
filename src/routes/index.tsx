@@ -1,7 +1,7 @@
+import Layuot from "competitions/layout/Layout";
 import { LoginPage } from "pages";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Layuot from "../competitions/layout/Layout";
 import HistoryPage from "../pages/history/HistoryPage";
 import HomePage from "../pages/home/HomePage";
 import ProfilePage from "../pages/profile/ProfilePage";

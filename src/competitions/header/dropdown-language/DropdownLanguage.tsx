@@ -1,8 +1,8 @@
 import "./style.css";
 import React, { useState } from "react";
 import { Checkbox } from "@mantine/core";
-import { ReactComponent as DropIcon } from "../../../assets/images/header/chevron.svg";
-import { ReactComponent as RusIcon } from "../../../assets/images/lang/rus.svg";
+import { ReactComponent as RusIcon } from "assets/images/lang/rus.svg";
+import { ReactComponent as DropIcon } from "assets/images/header/chevron.svg";
 
 function DropdownLanguage() {
   const [dropdown, setDropdown] = useState(false);
@@ -12,6 +12,7 @@ function DropdownLanguage() {
         className="dropdown__lang-title"
         onClick={() => setDropdown(!dropdown)}
       >
+        <RusIcon />
         <p>Ru</p>
         <DropIcon />
       </div>

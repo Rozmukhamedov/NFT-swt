@@ -1,8 +1,8 @@
 import "./style.css";
 import React from "react";
-import { Button, Menu } from "@mantine/core";
 import { Link } from "react-router-dom";
-import ImgUser from "../../../assets/images/user.png";
+import { Button, Menu } from "@mantine/core";
+import ImgUser from "assets/images/user.png";
 
 function DropdownProfile() {
   return (

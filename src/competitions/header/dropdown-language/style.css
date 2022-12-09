@@ -9,6 +9,12 @@
 .dropdown__lang .dropdown__lang-title {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown__lang .dropdown__lang-title svg{
+    margin-right: 5px;
 }
 
 .dropdown__lang .dropdown__lang-items {
@@ -18,11 +24,23 @@
     background: #FFFFFF;
     border-radius: 8px;
     padding: 20px;
-    width: 135px;
+    width: auto;
 }
 
 .dropdown__lang .dropdown__lang-items .dropdown__lang-item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.dropdown__lang .dropdown__lang-items .dropdown__lang-item p{
+    margin-left: 14px;
+    margin-right: 6px;
+    margin-top: -4px;
+}
+
+@media (max-width: 576px) {
+    .dropdown__lang .dropdown__lang-items{
+        padding: 12px 12px 10px 12px;
+    }
 }

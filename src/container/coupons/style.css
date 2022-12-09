@@ -1,0 +1,9 @@
+.coupons .coupons__flex h4 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #333333;
+}

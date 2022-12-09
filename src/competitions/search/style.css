@@ -16,3 +16,20 @@
     width: 20px;
     height: 20px;
 }
+
+@media (max-width: 576px) {
+    .search__input input {
+        max-width: 180px;
+        font-size: 12px;
+        padding-left: 28px
+    }
+
+    .search__input .mantine-Input-icon{
+        width: 32px;
+    }
+
+    .search__input .mantine-Input-icon svg{
+        width: 16px;
+        height: 16px;
+    }
+}
