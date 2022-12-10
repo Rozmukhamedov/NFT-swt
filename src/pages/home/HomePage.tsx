@@ -1,12 +1,13 @@
-import "./style.css"
-import React from 'react'
+import "./style.css";
+import React from "react";
+import { Coupons } from "container";
 
 function HomePage() {
   return (
     <div>
-      <p>123</p>
+      <Coupons />
     </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;

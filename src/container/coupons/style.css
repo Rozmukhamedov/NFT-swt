@@ -1,3 +1,18 @@
+.coupons {
+    padding: 48px 40px;
+    background: #FFFFFF;
+    border-radius: 28px;
+    margin: 20px 0;
+}
+
+.coupons .coupons__flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
 .coupons .coupons__flex h4 {
     font-family: 'Exo 2';
     font-style: normal;
@@ -6,4 +21,318 @@
     line-height: 40px;
     text-align: center;
     color: #333333;
+}
+
+.coupons .coupons__flex button {
+    background: #F2F3F7;
+    border-radius: 8px;
+    border: 1px solid #F2F3F7;
+    padding: 12px 16px;
+}
+
+.coupons .coupons__flex button a {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #6C6C6C;
+    text-decoration: none;
+}
+
+.coupons .coupons__flex button svg {
+    margin-bottom: 1px;
+    margin-left: 2px;
+}
+
+.coupons p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #333333;
+    height: 70px;
+    overflow: hidden;
+}
+
+.coupons .coupons__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #F2F3F7;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-bottom: 28px;
+}
+
+.coupons .coupons__card .coupons__card-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 2000px;
+}
+
+.coupons .coupons__card .coupons__card-flex img {
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.coupons .coupons__card .coupons__card-flex .coupons__card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.coupons .coupons__card .coupons__card-flex .coupons__card-text h4 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+}
+
+.coupons .coupons__card .coupons__card-flex .coupons__card-text p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #333333;
+    width: auto;
+    height: auto;
+}
+
+.coupons .coupons__card p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #333333;
+    height: 50px;
+    overflow: hidden;
+}
+
+.coupons .coupons__hero {
+    width: 100%;
+    height: 200px;
+    background: url("../../assets/images/coupons/image.png") no-repeat;
+    background-size: 100% 200px;
+    padding: 45px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.coupons .coupons__hero h1 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
+
+.coupons .coupons__hero h2 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.coupons .coupons__hero .coupons__hero-time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(14.1199px);
+    border-radius: 8px;
+    padding: 22px 24px;
+}
+
+.coupons .coupons__hero .coupons__hero-time p {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-left: 30px;
+}
+
+@media (max-width: 1200px) {
+    .coupons .coupons__hero h1 {
+        font-size: 46px;
+    }
+
+    .coupons .coupons__hero h2 {
+        font-size: 26px;
+    }
+
+    .coupons .coupons__hero .coupons__hero-time {
+        padding: 18px 20px;
+    }
+
+    .coupons .coupons__hero .coupons__hero-time p {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 992px) {
+    .coupons .coupons__hero {
+        background-size: 120% 200px;
+        background-position: right;
+        padding: 40px 45px;
+    }
+
+    .coupons .coupons__hero h1 {
+        font-size: 34px;
+    }
+
+    .coupons .coupons__hero h2 {
+        font-size: 20px;
+    }
+
+    .coupons .coupons__hero .coupons__hero-time {
+        padding: 16px 18px;
+    }
+
+    .coupons .coupons__hero .coupons__hero-time svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .coupons .coupons__hero .coupons__hero-time p {
+        font-size: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .coupons .coupons__flex h4 {
+        font-size: 30px;
+    }
+
+    .coupons .coupons__flex button a {
+        font-size: 20px;
+    }
+
+    .coupons .coupons__card {
+        margin-top: 30px;
+    }
+
+    .coupons .coupons__card .coupons__card-flex .coupons__card-text h4 {
+        font-size: 20px;
+    }
+
+    .coupons .coupons__card .coupons__card-flex .coupons__card-text p {
+        font-size: 16px;
+    }
+
+    .coupons .coupons__card p {
+        font-size: 16px;
+    }
+
+    .coupons p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 840px) {
+    .coupons {
+        padding: 24px 20px;
+    }
+
+    .coupons .coupons__hero {
+        background: url("../../assets/images/coupons/imageM.png") no-repeat;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background-size: 100% auto;
+        padding: 17px 20px;
+    }
+
+    .coupons .coupons__card p {
+        display: none;
+    }
+
+    .coupons .coupons__hero h1 {
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .coupons .coupons__hero h2 {
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .coupons .coupons__hero .coupons__hero-time {
+        padding: 4px 10px;
+        width: 145px;
+        height: 41px;
+        margin-top: 30px;
+    }
+
+    .coupons .coupons__hero .coupons__hero-time svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .coupons .coupons__hero .coupons__hero-time p {
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+        margin-left: 15px;
+        height: auto;
+    }
+
+    .coupons .coupons__card .coupons__card-flex .coupons__card-text p {
+        display: block;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .coupons .coupons__flex h4 {
+        font-size: 20px;
+    }
+
+    .coupons .coupons__flex button {
+        padding: 6px 8px;
+    }
+
+    .coupons .coupons__flex button svg {
+        margin-bottom: -1px;
+    }
+
+    .coupons .coupons__flex button a {
+        font-size: 16px;
+    }
+
+    .coupons .coupons__card .coupons__card-flex .coupons__card-text h4 {
+        font-size: 18px;
+    }
+
+    .coupons .coupons__card .coupons__card-flex .coupons__card-text p {
+        font-size: 14px;
+    }
 }
