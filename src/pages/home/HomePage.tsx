@@ -1,12 +1,14 @@
 import "./style.css";
 import React from "react";
-import { Coupons } from "container";
+import { Container } from "@mantine/core";
+import { Category, Coupons } from "container";
 
 function HomePage() {
   return (
-    <div>
+    <Container size={"xl"}>
       <Coupons />
-    </div>
+      <Category />
+    </Container>
   );
 }
 

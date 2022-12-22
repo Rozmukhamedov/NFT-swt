@@ -1,0 +1,99 @@
+.card {
+    position: relative;
+    padding: 10px;
+    background: #ffffff;
+}
+
+.card .new {
+    position: absolute;
+    top: 26px;
+    left: 22px;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+.card .new p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.card img {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 23px;
+}
+
+.card h3 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #333333;
+}
+
+.card button {
+    width: 100%;
+    padding: 12px 5px;
+    background: #EE3D48;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+    .card img {
+        height: 162px;
+    }
+
+    .card .new {
+        top: 20px;
+        left: 16px;
+        border-radius: 4px;
+        padding: 2px 7px;
+    }
+
+    .card .new p {
+        font-size: 12px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .card p {
+        font-size: 12px;
+        line-height: 100%;
+    }
+
+    .card button {
+        font-size: 12px;
+        padding: 6px 20px;
+        border-radius: 4px;
+    }
+}

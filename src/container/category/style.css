@@ -1,0 +1,80 @@
+.category .category__flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.category .category__flex h2 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: #333333;
+}
+
+.category .category__flex button {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #6C6C6C;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 12px 16px;
+    border: none;
+}
+
+.category .category__flex button svg {
+    margin-left: 11px;
+    margin-top: 1px;
+}
+
+.category .category__card {
+    background: #FFFFFF;
+    border-radius: 32px;
+    padding: 10px;
+}
+
+.category .category__card a {
+    text-decoration: none;
+}
+
+.category .category__card h3 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    margin: 10px 0 10px 4px;
+}
+
+@media (max-width: 576px) {
+    .category .category__flex h2 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .category .category__flex button {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 6px 8px;
+    }
+
+    .category .category__flex button svg {
+        width: 7px;
+        height: 7px;
+        margin-left: 5px;
+        margin-top: 0;
+    }
+
+    .category .category__card h3 {
+        font-size: 20px;
+        margin: 5px 0 0 10px;
+    }
+}

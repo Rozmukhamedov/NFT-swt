@@ -1,13 +1,17 @@
-import Layuot from "competitions/layout/Layout";
-import { LoginPage } from "pages";
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import HistoryPage from "../pages/history/HistoryPage";
-import HomePage from "../pages/home/HomePage";
-import ProfilePage from "../pages/profile/ProfilePage";
-import RegistrationPage from "../pages/registration/RegistrationPage";
-import PrivateRouter from "./PrivateRouter";
 import PublicRouter from "./PublicRouter";
+import PrivateRouter from "./PrivateRouter";
+import Layuot from "competitions/layout/Layout";
+import { Routes, Route } from "react-router-dom";
+import {
+  Category,
+  HistoryPage,
+  HomePage,
+  LoginPage,
+  Products,
+  ProfilePage,
+  RegistrationPage,
+} from "pages";
 
 function MainRoutes() {
   return (
@@ -15,6 +19,8 @@ function MainRoutes() {
       <Routes>
         <Route path="/" element={<Layuot />}>
           <Route index element={<HomePage />} />
+          <Route path="category" element={<Category />} />
+          <Route path="products" element={<Products />} />
           <Route element={<PrivateRouter />}>
             <Route path="profile" element={<ProfilePage />} />
             <Route path="history" element={<HistoryPage />} />
