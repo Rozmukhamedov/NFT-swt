@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.86696512.css",
+    "main.js": "/static/js/main.97f9d84d.js",
+    "static/js/787.5e15adf4.chunk.js": "/static/js/787.5e15adf4.chunk.js",
+    "static/media/category.png": "/static/media/category.12b2fdfaf5de2d90bcfa.png",
+    "static/media/image.png": "/static/media/image.31cb083f63b49d4520de.png",
+    "static/media/Exo2-Regular.ttf": "/static/media/Exo2-Regular.d155d0ba44978e6b3240.ttf",
+    "static/media/logo.svg": "/static/media/logo.5c0031c553d8913e740443b617f169a5.svg",
+    "static/media/imageM.png": "/static/media/imageM.c20f70ad09783607745f.png",
+    "static/media/instagram.svg": "/static/media/instagram.6737d1dd62e029a348299a713c8a3291.svg",
+    "static/media/google.svg": "/static/media/google.c6fafb306127deab5c4d1a2be1f7c326.svg",
+    "static/media/apple.svg": "/static/media/apple.02dd98b569f49748d1beea4b7698c196.svg",
+    "static/media/twitter.svg": "/static/media/twitter.456c1d39ebc8f5855409f2371fbe96fc.svg",
+    "static/media/facebook.svg": "/static/media/facebook.6654e6968bf3c369ddbaf706ecc59259.svg",
+    "static/media/lock.svg": "/static/media/lock.da64e2e9961b07a8cdcb465b2735cb42.svg",
+    "index.html": "/index.html",
+    "static/media/rus.svg": "/static/media/rus.76b2b4231d4d897f8f566c42a02e41a0.svg",
+    "static/media/right.svg": "/static/media/right.f92cde37386ae302dc258193e297a795.svg",
+    "static/media/success.svg": "/static/media/success.34fe7b001666f5c9da6e1e2f6990867d.svg",
+    "static/media/chevron.svg": "/static/media/chevron.4cc330448a070878ac2b1b0dd283ec88.svg",
+    "main.86696512.css.map": "/static/css/main.86696512.css.map",
+    "main.97f9d84d.js.map": "/static/js/main.97f9d84d.js.map",
+    "787.5e15adf4.chunk.js.map": "/static/js/787.5e15adf4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86696512.css",
+    "static/js/main.97f9d84d.js"
+  ]
+}
