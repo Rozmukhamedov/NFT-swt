@@ -1,0 +1,169 @@
+.best {
+    background: #FFFFFF;
+    border-radius: 28px;
+    padding: 48px 40px;
+    margin-bottom: 30px;
+}
+
+.best .best__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.best .best__flex h2 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #333333;
+}
+
+.best .best__flex button {
+    background: #F2F3F7;
+    border-radius: 8px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #6C6C6C;
+    border: none;
+    padding: 12px 16px;
+}
+
+.best .best__flex button svg {
+    margin-left: 11px;
+}
+
+.best .best__filter button {
+    padding: 12px 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: #333333;
+    background: #F2F3F7;
+    border-radius: 8px;
+    border: none;
+    margin-right: 24px;
+}
+
+.best .best__filter {
+    display: flex;
+    flex-direction: row;
+}
+
+.best .best__filter button.active {
+    background: #EE3D48;
+    color: #FFFFFF;
+}
+
+.best .best__cards .best__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.best .best__cards .best__card .best__card-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 2000px;
+}
+
+.best .best__cards .best__card .best__card-flex h3 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+}
+
+.best .best__cards .best__card .best__card-flex h3 span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #333333;
+}
+
+.best .best__cards .best__card .best__card-flex img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 40px;
+}
+
+.best .best__cards .best__card p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #333333;
+    height: 50px;
+    overflow: hidden;
+}
+
+@media (max-width: 992px) {
+    .best .best__cards .best__card p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 840px) {
+    .best {
+        padding: 24px 20px;
+    }
+
+    .best .best__flex h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .best .best__cards .best__card p {
+        display: none;
+    }
+
+    .best .best__flex button {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .best .best__filter button {
+        font-size: 12px;
+        line-height: 140%;
+        padding: 6px 8px;
+        margin-right: 12px;
+    }
+
+    .best .best__cards .best__card .best__card-flex img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .best .best__cards .best__card .best__card-flex h3 {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+
+    .best .best__cards .best__card .best__card-flex h3 span {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 70%;
+    }
+}

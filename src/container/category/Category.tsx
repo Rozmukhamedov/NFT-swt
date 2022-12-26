@@ -38,9 +38,9 @@ function Category() {
         </Button>
       </div>
       <Grid>
-        {date?.map((d: any) => (
-          <Grid.Col span={12} md={6}>
-            <div className="category__card" key={d.index}>
+        {date?.map((d: any, index: number) => (
+          <Grid.Col span={12} md={6} key={index + 100}>
+            <div className="category__card">
               <Link to={"category"}>
                 <img src={d.image} alt={d.text} />
                 <h3>{d.text}</h3>

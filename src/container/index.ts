@@ -4,3 +4,4 @@ export { default as Event } from "./event";
 export { default as Registr } from "./registration";
 export { default as RegistrSuccess } from "./registsuccess";
 export { default as Category } from "./category";
+export { default as Best } from "./best";

@@ -6,6 +6,8 @@ import { ReactComponent as DropIcon } from "assets/images/header/chevron.svg";
 
 function DropdownLanguage() {
   const [dropdown, setDropdown] = useState(false);
+  const [value, setValue] = useState<any>();
+
   return (
     <div className="dropdown__lang">
       <div
@@ -22,7 +24,10 @@ function DropdownLanguage() {
             <Checkbox
               className="dropdown__lang-checkbox"
               value={"english"}
-              onChange={(e) => console.log(e.target.value)}
+              onChange={() => setValue("english")}
+              indeterminate={false}
+              color={"red"}
+              checked={value === "english" ? true : false}
             />
             <p>Ru</p>
             <RusIcon />
@@ -30,8 +35,10 @@ function DropdownLanguage() {
           <div className="dropdown__lang-item">
             <Checkbox
               className="dropdown__lang-checkbox"
-              value={"english"}
-              onChange={(e) => console.log(e.target.value)}
+              value={"rusian"}
+              color={"red"}
+              onChange={() => setValue("rusian")}
+              checked={value === "rusian" ? true : false}
             />
             <p>Ru</p>
             <RusIcon />
@@ -39,8 +46,10 @@ function DropdownLanguage() {
           <div className="dropdown__lang-item">
             <Checkbox
               className="dropdown__lang-checkbox"
-              value={"english"}
-              onChange={(e) => console.log(e.target.value)}
+              value={"china"}
+              color={"red"}
+              onChange={() => setValue("china")}
+              checked={value === "china" ? true : false}
             />
             <p>Ru</p>
             <RusIcon />
