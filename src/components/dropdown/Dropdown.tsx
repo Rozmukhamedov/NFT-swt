@@ -11,6 +11,7 @@ type DropdownProps = {
   position?: string;
   title: string;
   items?: any;
+  onClick?: any;
 };
 
 const Dropdown: FC<DropdownProps> = ({
@@ -19,7 +20,8 @@ const Dropdown: FC<DropdownProps> = ({
   shadow,
   position,
   title,
-  items
+  items,
+  onClick,
 }) => {
   return (
     <div className="dropdown">
@@ -33,7 +35,15 @@ const Dropdown: FC<DropdownProps> = ({
         </Menu.Target>
 
         <Menu.Dropdown className="dropdown__items">
-          <Menu.Item className="dropdown__item">Войти</Menu.Item>
+          {items?.map((item: any) => (
+            <Menu.Item
+              key={item?.index}
+              className="dropdown__item"
+              onClick={() => onClick(item)}
+            >
+              {item?.value}
+            </Menu.Item>
+          ))}
         </Menu.Dropdown>
       </Menu>
     </div>

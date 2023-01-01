@@ -1,0 +1,19 @@
+.products .products__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products .products__flex .left {
+    display: flex;
+    flex-direction: row;
+}
+
+.products .products__flex .left .dropdown {
+    margin-right: 32px;
+}
+
+.products .products__flex .left .input {
+    margin-right: 16px;
+}

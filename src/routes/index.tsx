@@ -1,7 +1,7 @@
 import React from "react";
 import PublicRouter from "./PublicRouter";
 import PrivateRouter from "./PrivateRouter";
-import Layuot from "competitions/layout/Layout";
+import Layuot from "components/layout/Layout";
 import { Routes, Route } from "react-router-dom";
 import {
   Category,

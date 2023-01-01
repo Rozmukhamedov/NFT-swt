@@ -1,6 +1,6 @@
 import "./style.css";
 import React, { FC } from "react";
-import { Button } from "competitions";
+import { Button } from "components";
 
 type CardProps = {
   image: any;

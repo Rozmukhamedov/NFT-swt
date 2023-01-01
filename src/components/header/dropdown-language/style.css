@@ -25,6 +25,7 @@
     border-radius: 8px;
     padding: 20px;
     width: auto;
+    z-index: 3;
 }
 
 .dropdown__lang .dropdown__lang-items .dropdown__lang-item {

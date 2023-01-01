@@ -40,7 +40,7 @@ function DropdownLanguage() {
               onChange={() => setValue("rusian")}
               checked={value === "rusian" ? true : false}
             />
-            <p>Ru</p>
+            <p>En</p>
             <RusIcon />
           </div>
           <div className="dropdown__lang-item">
@@ -51,7 +51,7 @@ function DropdownLanguage() {
               onChange={() => setValue("china")}
               checked={value === "china" ? true : false}
             />
-            <p>Ru</p>
+            <p>Ch</p>
             <RusIcon />
           </div>
         </div>

@@ -1,10 +1,14 @@
 import "./style.css";
-import React from "react";
-import { Card } from "competitions";
+import React, { useEffect } from "react";
+import { Card } from "components";
 import IMG from "assets/images/category.png";
 import { Container, Grid } from "@mantine/core";
 
 function Category() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const date = [
     {
       image: IMG,
@@ -54,7 +58,7 @@ function Category() {
           <p className="p">Описание</p>
         </Container>
 
-        <Grid style={{marginBottom: "30px"}}>
+        <Grid style={{ marginBottom: "30px" }}>
           {date?.map((d: any, index: number) => (
             <Grid.Col span={6} md={4} key={index}>
               <Card

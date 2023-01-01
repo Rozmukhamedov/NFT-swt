@@ -1,7 +1,7 @@
 import "./style.css";
 import React from "react";
 import { Grid } from "@mantine/core";
-import { Button } from "competitions";
+import { Button } from "components";
 import IMG from "assets/images/category.png";
 import { ReactComponent as RIGHTICON } from "assets/images/right.svg";
 import { Link } from "react-router-dom";

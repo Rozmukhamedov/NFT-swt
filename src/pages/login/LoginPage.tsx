@@ -1,6 +1,6 @@
 import "./style.css";
 import React from "react";
-import { Button, Input } from "competitions";
+import { Button, Input } from "components";
 import { Container } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { ReactComponent as AICON } from "assets/images/apple.svg";

@@ -1,6 +1,6 @@
 import "./style.css";
 import React from "react";
-import { Button } from "competitions";
+import { Button } from "components";
 import { Link } from "react-router-dom";
 import IMG from "assets/images/user.png";
 import { ReactComponent as RIGHTICON } from "assets/images/right.svg";

@@ -1,6 +1,6 @@
 import "./style.css";
 import React, { useState } from "react";
-import { Button } from "competitions";
+import { Button } from "components";
 import IMG from "assets/images/product.png";
 import { ReactComponent as RIGHTICON } from "assets/images/right.svg";
 

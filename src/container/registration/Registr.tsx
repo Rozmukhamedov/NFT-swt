@@ -1,7 +1,7 @@
 import "./style.css";
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button, Input } from "competitions";
+import { Button, Input } from "components";
 import { ReactComponent as AICON } from "assets/images/apple.svg";
 import { ReactComponent as FICON } from "assets/images/facebook.svg";
 import { ReactComponent as GICON } from "assets/images/google.svg";
