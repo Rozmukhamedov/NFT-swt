@@ -70,3 +70,7 @@ select {
 .App p{
   font-family: "Exo 2";
 }
+
+textarea:focus, input:focus{
+  outline: none !important;
+}

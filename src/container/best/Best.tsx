@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Button } from "components";
 import IMG from "assets/images/product.png";
 import { ReactComponent as RIGHTICON } from "assets/images/right.svg";
+import { Link } from "react-router-dom";
 
 function Best() {
   const [filter, setFilter] = useState("");
@@ -54,7 +55,9 @@ function Best() {
       <div className="best__flex">
         <h2>Лучшее</h2>
         <Button type="button">
-          Посмотреть все <RIGHTICON />
+          <Link to="/products">
+            Посмотреть все <RIGHTICON />
+          </Link>
         </Button>
       </div>
       <div className="best__filter">

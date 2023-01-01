@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 30px 0 10px 0;
 }
 
 .products .products__flex .left {
@@ -11,9 +12,86 @@
 }
 
 .products .products__flex .left .dropdown {
-    margin-right: 32px;
+    margin-right: 16px;
 }
 
 .products .products__flex .left .input {
     margin-right: 16px;
+    width: 100px;
+}
+
+.products .products__flex .left .input input {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    background: #FFFFFF;
+    border-radius: 8px;
+
+}
+
+.products .products__flex .left .input input:focus {
+    outline: none
+}
+
+.products .products__flex .left button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #333333;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+    padding: 6px 16px;
+}
+
+.products .products__flex .right {
+    display: flex;
+    flex-direction: row;
+}
+
+.products .products__flex .right button {
+    margin-left: 10px;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.products .products__flex .right button .inactive rect {
+    fill: #F2F3F7;
+}
+
+.products .products__flex .right button .active rect {
+    fill: #EE3D48;
+}
+
+.products .product__filter {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.products .product__filter .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    padding: 7px 12px;
+    margin-right: 10px;
+}
+
+.products .product__filter .box p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #AFAFAF;
+    margin-right: 6px;
 }
