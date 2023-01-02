@@ -1,0 +1,15 @@
+.product {
+    position: relative;
+}
+
+.product img{
+    width: 100%;
+    height: auto;
+}
+
+.product .close__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+}

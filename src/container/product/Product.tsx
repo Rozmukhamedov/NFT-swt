@@ -1,3 +1,4 @@
+import "./style.css";
 import { Modal } from "@mantine/core";
 import { Button } from "components";
 import React, { FC, useState } from "react";
@@ -20,10 +21,8 @@ const Product: FC<ProductProps> = ({ opened, setOpened }) => {
       >
         <div className="product">
           <img src={IMG} alt={"image"} />
-          <div className="closeButton">
-            <Button>
-              <Close />
-            </Button>
+          <div className="close__button">
+            <Close />
           </div>
           <div className="flex">
             <h3>Kitaro World Official</h3>
