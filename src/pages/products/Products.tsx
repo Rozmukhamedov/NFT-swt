@@ -1,7 +1,8 @@
 import "./style.css";
-import React, { useEffect, useState } from "react";
+import { Product } from "container";
 import IMG from "assets/images/product.png";
 import { useViewportSize } from "@mantine/hooks";
+import React, { useEffect, useState } from "react";
 import { Button, Card, Dropdown } from "components";
 import { Container, Grid, NumberInput } from "@mantine/core";
 import { ReactComponent as Sort1 } from "assets/images/sort1.svg";
@@ -16,7 +17,8 @@ function Products() {
   const [category, setCategory] = useState("");
   const [sortCard, setSortCard] = useState(3);
   const [sortMobileCard, setSortMobileCard] = useState(6);
-  
+  const [opened, setOpened] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -315,12 +317,14 @@ function Products() {
                   title={d.title}
                   price={d.price}
                   new_d={d.new}
+                  setOpened={() => setOpened(true)}
                 />
               </Grid.Col>
             ))}
           </Grid>
         </div>
       </div>
+      <Product opened={opened} setOpened={setOpened} />
     </Container>
   );
 }

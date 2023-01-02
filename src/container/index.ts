@@ -5,3 +5,4 @@ export { default as Registr } from "./registration";
 export { default as RegistrSuccess } from "./registsuccess";
 export { default as Category } from "./category";
 export { default as Best } from "./best";
+export { default as Product } from "./product";
