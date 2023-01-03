@@ -3,6 +3,8 @@ import React from "react";
 import { Container } from "@mantine/core";
 import { Best, Carousel, Category, Coupons } from "container";
 import IMG from "assets/images/product.png";
+import Wheel from "container/spinning-wheel";
+
 
 function HomePage() {
   const data = [
@@ -53,6 +55,7 @@ function HomePage() {
       <Coupons />
       <Best />
       <Category />
+      <Wheel/>
     </Container>
   );
 }
