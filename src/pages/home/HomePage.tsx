@@ -1,12 +1,12 @@
 import "./style.css";
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "@mantine/core";
 import { Best, Carousel, Category, Coupons } from "container";
 import IMG from "assets/images/product.png";
 import Wheel from "container/spinning-wheel";
 
-
 function HomePage() {
+  const [opened, setOpened] = useState(false);
   const data = [
     {
       id: 1,
@@ -51,11 +51,11 @@ function HomePage() {
   ];
   return (
     <Container size={"xl"}>
-      <Carousel data={data}/>
-      <Coupons />
+      <Carousel data={data} />
+      <Coupons setOpened={setOpened}/>
       <Best />
       <Category />
-      <Wheel/>
+      {opened ? <Wheel setOpened={setOpened} /> : null}
     </Container>
   );
 }

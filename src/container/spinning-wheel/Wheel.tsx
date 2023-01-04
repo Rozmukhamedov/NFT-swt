@@ -1,18 +1,25 @@
-import React, { useRef } from "react";
 import "./style.css";
+import BG from "./bg.png";
 import Marker from "./marker1.png";
+import { Button } from "components";
 import WheelImage from "./wheel1.png";
-import ButtonImage from "./button.png";
+import React, { FC, useRef, useState } from "react";
+import { ReactComponent as Close } from "assets/images/close.svg";
+import { useViewportSize } from "@mantine/hooks";
 
-function Wheel() {
+type WheelProps = {
+  setOpened: (e: boolean) => void;
+};
+
+const Wheel: FC<WheelProps> = ({ setOpened }) => {
+  const { width } = useViewportSize();
+  const [win, setWin] = useState("");
+  const [regulations, setRegulations] = useState(false);
   const wheel = useRef<any>(null);
-  const startButton = useRef<any>(null);
-  const display = useRef<any>(null);
 
   let deg = 0;
-  let zoneSize = 45; // deg
+  let zoneSize = 45;
 
-  // Counter clockwise
   const symbolSegments: any = {
     1: "1",
     2: "2",
@@ -39,12 +46,11 @@ function Wheel() {
   const handleWin = (actualDeg: any) => {
     const winningSymbolNr = Math.ceil(actualDeg / zoneSize);
     console.log(symbolSegments[winningSymbolNr]);
-    display.current.innerHTML = symbolSegments[winningSymbolNr];
+
+    setWin(symbolSegments[winningSymbolNr]);
   };
 
   const startFunc = () => {
-    display.current.innerHTML = "-";
-    startButton.current.style.pointerEvents = "none";
     deg = Math.floor(5000 + Math.random() * 5000);
     wheel.current.style.transition = "all 10s ease-out";
     wheel.current.style.transform = `rotate(${deg}deg)`;
@@ -57,8 +63,6 @@ function Wheel() {
 
   const onChangeFunctionn = (deg: any) => {
     wheel.current.classList.remove("blur");
-
-    startButton.current.style.pointerEvents = "auto";
     wheel.current.style.transition = "none";
     const actualDeg = deg % 360;
     wheel.current.style.transform = `rotate(${actualDeg}deg)`;
@@ -67,20 +71,54 @@ function Wheel() {
   };
 
   return (
-    <div id="app">
-      <img className="marker" src={Marker} />
-      <img className="wheel" ref={wheel} src={WheelImage} />
-      <img
-        className="button"
-        onClick={startFunc}
-        ref={startButton}
-        src={ButtonImage}
-      />
-      <div className="display" ref={display}>
-        -
+    <>
+      <div
+        className="wheel__popup"
+        style={
+          width > 992
+            ? { background: `url(${BG})`, backgroundRepeat: "no-repeat" }
+            : {}
+        }
+      >
+        <div className="wheel__carousel">
+          <img className="marker" src={Marker} />
+          <img className="wheel" ref={wheel} src={WheelImage} />
+        </div>
+        <div className="wheel__texts">
+          <h1>Колесо фортуны</h1>
+          <p>Крути и получай гарантированный приз</p>
+
+          {!!win ? (
+            <div className="result">
+              <p>Ваш выигрыш: </p>
+              <p>{win}</p>
+            </div>
+          ) : (
+            <Button type="button" onClick={startFunc}>
+              Крутить
+            </Button>
+          )}
+
+          <span onClick={() => setRegulations(!regulations)}>
+            Правила участия
+          </span>
+          {regulations ? (
+            <div className="regulations">
+              <p>Текст правил</p>
+            </div>
+          ) : null}
+        </div>
+        <Button
+          type="button"
+          className="close__button"
+          onClick={() => setOpened(false)}
+        >
+          <Close />
+        </Button>
       </div>
-    </div>
+      <div className="wheel__bg"></div>
+    </>
   );
-}
+};
 
 export default Wheel;

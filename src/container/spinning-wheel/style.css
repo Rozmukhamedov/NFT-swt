@@ -1,29 +1,144 @@
-#app {
-  width: 400px;
-  height: 400px;
-  margin: 0 auto;
-  position: relative;
+.wheel__popup {
+  position: fixed;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 900px;
+  height: 368px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 30px 40px;
 }
 
-.display {
+.wheel__popup .wheel__carousel {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: -100px;
+  left: -200px;
+}
+
+.wheel__popup .wheel__texts {
+  width: 440px;
+  height: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  width: 200px;
-  height: 50px;
-  border: 1px solid black;
-  border-radius: 20px;
+}
+
+.wheel__popup .wheel__texts h1 {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+
+.wheel__popup .wheel__texts p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.wheel__popup .wheel__texts button {
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 8px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-  margin: 20px auto;
+  color: #EE3D48;
+  border: none;
+  padding: 10px 0;
+  margin-top: 35px;
+}
+
+.wheel__popup .wheel__texts span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 20px;
+}
+
+.wheel__popup .wheel__texts .regulations {
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 20px;
+  bottom: -50px;
+  width: 400px;
+}
+
+.wheel__popup .wheel__texts .regulations p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #000000;
+}
+
+.wheel__popup .wheel__texts .result {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: flex;
+  margin-top: 5 0px;
+}
+
+.wheel__popup .wheel__texts .result p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: #333333;
+  margin-right: 3px;
+}
+
+.wheel__popup .wheel__texts .result p span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: #333333;
+}
+
+.wheel__popup .close__button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 7px;
+  border: none;
+}
+
+.wheel__popup .close__button svg {
+  fill: #EE3D48;
 }
 
 .marker {
   position: absolute;
   width: 50px;
-  left: 172px;
-  top: 30px;
+  left: 275px;
+  top: 55px;
   z-index: 2;
   transform: rotate(270deg);
 }
@@ -31,6 +146,7 @@
 .wheel {
   width: 100%;
   height: 100%;
+  position: absolute;
 }
 
 .button {
@@ -59,5 +175,93 @@
 
   100% {
     filter: blur(0px);
+  }
+}
+
+.wheel__bg {
+  background: rgba(242, 243, 247, 0.6);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 992px) {
+  .wheel__popup {
+    width: 400px;
+    height: 382px;
+    top: 35%;
+    left: 50%;
+    background: #EE3D48;
+  }
+
+  .wheel__popup .wheel__carousel {
+    width: 506px;
+    height: 506px;
+    top: 130px;
+    left: -53px;
+  }
+
+  .wheel__popup .wheel__texts {
+    justify-content: start
+  }
+
+  .wheel__popup .wheel__texts h1 {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FFFFFF;
+  }
+
+  .wheel__popup .wheel__texts p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+  }
+
+  .wheel__popup .wheel__texts button {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    padding: 7px 0;
+  }
+
+  .wheel__popup .wheel__texts span {
+    position: relative;
+    bottom: 0;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+  }
+  
+  .wheel__popup .wheel__texts .regulations{
+    width: 320px;
+    bottom: 150px;
+    z-index: 15;
+  }
+
+  .marker {
+    left: 228px;
+    top: 52px;
+  }
+
+  .wheel__popup .wheel__texts .result{
+    padding: 6px 8px;
+    margin: 10px 0
+  }
+  
+  .wheel__popup .wheel__texts .result p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
   }
 }

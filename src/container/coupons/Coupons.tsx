@@ -1,12 +1,16 @@
 import "./style.css";
-import React from "react";
+import React, { FC } from "react";
 import { Button } from "components";
 import { Link } from "react-router-dom";
 import IMG from "assets/images/user.png";
 import { ReactComponent as RIGHTICON } from "assets/images/right.svg";
 import { ReactComponent as LCOKICON } from "assets/images/coupons/lock.svg";
 
-function Coupons() {
+type CouponsPropd = {
+  setOpened: (e: boolean) => void;
+};
+
+const Coupons: FC<CouponsPropd> = ({ setOpened }) => {
   return (
     <div className="coupons">
       <div className="coupons__flex">
@@ -40,7 +44,7 @@ function Coupons() {
           characters. Welcome to the Kitaro Community Collaboration Program.
         </p>
       </div>
-      <div className="coupons__hero">
+      <div className="coupons__hero" onClick={() => setOpened(true)}>
         <div>
           <h1>Колесо фортуны</h1>
           <h2>Крути и получай гарантированный приз</h2>
@@ -53,6 +57,6 @@ function Coupons() {
       </div>
     </div>
   );
-}
+};
 
 export default Coupons;
