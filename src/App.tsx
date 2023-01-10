@@ -7,11 +7,11 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div className="App">
-          <AuthProvider>
-            <MainRoutes/>
-          </AuthProvider>
-        </div>
+        <AuthProvider>
+          <div className="App">
+            <MainRoutes />
+          </div>
+        </AuthProvider>
       </BrowserRouter>
     </>
   );

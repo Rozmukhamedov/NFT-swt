@@ -131,6 +131,9 @@
     text-align: center;
     background: none;
     border: none;
+    display: block;
+    width: auto;
+    margin: 0;
 }
 
 .login .login__box .login__form .login_btns .button a {
@@ -147,7 +150,7 @@
         font-size: 28px;
     }
 
-    .login .login__box .login__text svg{
+    .login .login__box .login__text svg {
         margin: 0 3px;
     }
 
@@ -158,12 +161,12 @@
     .login .login__box .login__form .login__input .login__input-flex a {
         font-size: 16px;
     }
-    
-    .login .login__box .login__form .login_btns .btn{
+
+    .login .login__box .login__form .login_btns .btn {
         font-size: 16px;
     }
 
-    .login .login__box .login__form .login_btns .button{
+    .login .login__box .login__form .login_btns .button {
         font-size: 16px;
     }
 }

@@ -7,45 +7,10 @@ import Logo from "assets/images/logo.svg";
 import SearchInput from "../search/SearchInput";
 import DropdownProfile from "./dropdown-profile/DropdownProfile";
 import DropdownLanguage from "./dropdown-language/DropdownLanguage";
+import { useAuthContext } from "context/AuthProvider";
 
 function Header() {
-  const [haveMetamask, sethaveMetamask] = useState(true);
-  const [accountAddress, setAccountAddress] = useState("");
-  const [accountBalance, setAccountBalance] = useState("");
-  const [isConnected, setIsConnected] = useState(false);
-
-  const { ethereum } = window;
-  const provider = new ethers.providers.Web3Provider(window.ethereum);
-
-  useEffect(() => {
-    const { ethereum } = window;
-    const checkMetamaskAvailability = async () => {
-      if (!ethereum) {
-        sethaveMetamask(false);
-      }
-      sethaveMetamask(true);
-    };
-    checkMetamaskAvailability();
-  }, []);
-
-  const connectWallet = async () => {
-    try {
-      if (!ethereum) {
-        sethaveMetamask(false);
-      }
-      const accounts = await ethereum.request({
-        method: "eth_requestAccounts",
-      });
-      let balance = await provider.getBalance(accounts[0]);
-      let bal = ethers.utils.formatEther(balance);
-      setAccountAddress(accounts[0]);
-      setAccountBalance(bal);
-      setIsConnected(true);
-    } catch (error) {
-      setIsConnected(false);
-    }
-  };
-
+  const { connectWallet, accountBalance }: any = useAuthContext();
 
   return (
     <div className="header">
