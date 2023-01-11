@@ -59,8 +59,8 @@ const Carousel: FC<CarouselProps> = ({ data }) => {
         </Button>
       </div>
       <Slider {...settings} className="box">
-        {data?.map((d: any) => (
-          <div>
+        {data?.map((d: any, index: number) => (
+          <div key={index}>
             <div className="carousel__card">
               <img src={d?.image} alt="" />
               <div className="new__year">

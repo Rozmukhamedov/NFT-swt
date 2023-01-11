@@ -1,14 +1,17 @@
 import "./style.css";
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button, Input } from "components";
 import { Container } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { ReactComponent as AICON } from "assets/images/apple.svg";
 import { ReactComponent as FICON } from "assets/images/facebook.svg";
 import { ReactComponent as GICON } from "assets/images/google.svg";
-import { Link } from "react-router-dom";
+import { useAuthContext } from "context/AuthProvider";
 
 function LoginPage() {
+  const { connectWallet, accountBalance, setMessage }: any = useAuthContext();
+
   const form = useForm({
     initialValues: { login: "" },
     validate: {
@@ -16,6 +19,10 @@ function LoginPage() {
         value.length < 2 ? "Name must have at least 2 letters" : null,
     },
   });
+
+  const LogInSend = () => {
+
+  }
 
   return (
     <Container size="xl">
@@ -38,7 +45,7 @@ function LoginPage() {
           <div className="login__border">
             <p>или</p>
           </div>
-          <form className="login__form">
+          <form className="login__form" onSubmit={form.onSubmit(LogInSend)}>
             <div className="login__input">
               <p>Логин</p>
               <Input type="text" name="login" form={form} />

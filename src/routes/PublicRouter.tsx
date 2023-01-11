@@ -5,9 +5,9 @@ import { useAuthContext } from "../context/AuthProvider";
 function PublicRouter() {
   const location = useLocation();
   const fromPage = location.state?.from?.pathname || "/";
-  const { authRouter }: any = useAuthContext();
+  const { isConnected }: any = useAuthContext();
 
-  if (!authRouter) {
+  if (isConnected) {
     return <Navigate to={fromPage} replace />;
   }
 

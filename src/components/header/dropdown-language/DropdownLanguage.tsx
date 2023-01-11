@@ -2,6 +2,8 @@ import "./style.css";
 import React, { useState } from "react";
 import { Checkbox } from "@mantine/core";
 import { ReactComponent as RusIcon } from "assets/images/lang/rus.svg";
+import { ReactComponent as EngIcon } from "assets/images/lang/eng.svg";
+import { ReactComponent as ChinIcon } from "assets/images/lang/chin.svg";
 import { ReactComponent as DropIcon } from "assets/images/header/chevron.svg";
 
 function DropdownLanguage() {
@@ -41,7 +43,7 @@ function DropdownLanguage() {
               checked={value === "rusian" ? true : false}
             />
             <p>En</p>
-            <RusIcon />
+            <EngIcon />
           </div>
           <div className="dropdown__lang-item">
             <Checkbox
@@ -52,7 +54,7 @@ function DropdownLanguage() {
               checked={value === "china" ? true : false}
             />
             <p>Ch</p>
-            <RusIcon />
+            <ChinIcon />
           </div>
         </div>
       ) : null}

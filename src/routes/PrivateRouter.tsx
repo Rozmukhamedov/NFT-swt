@@ -4,9 +4,9 @@ import { useAuthContext } from "../context/AuthProvider";
 
 function PrivateRouter() {
   const location = useLocation();
-  const { authRouter }: any = useAuthContext();
+  const { isConnected }: any = useAuthContext();
 
-  if (authRouter) {
+  if (!isConnected) {
     return <Navigate to={"/login"} state={{ from: location }} replace />;
   }
   return <Outlet />;

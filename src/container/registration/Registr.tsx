@@ -6,7 +6,7 @@ import { ReactComponent as AICON } from "assets/images/apple.svg";
 import { ReactComponent as FICON } from "assets/images/facebook.svg";
 import { ReactComponent as GICON } from "assets/images/google.svg";
 
-function Registr({ form }: any) {
+function Registr({ form, onSubmit }: any) {
   return (
     <>
       <div className="registration__box">
@@ -25,7 +25,7 @@ function Registr({ form }: any) {
         <div className="registration__border">
           <p>или</p>
         </div>
-        <form className="registration__form">
+        <form className="registration__form" onSubmit={form.onSubmit(onSubmit)}>
           <div className="registration__input">
             <p>Имя пользователя</p>
             <Input
